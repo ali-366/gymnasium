@@ -1,0 +1,207 @@
+:root{
+    --ff1:'Oswald', sans-serif;
+    --ff1:'Open Sans', sans-serif;
+    --brandcl:#e23e38;
+    --tiwtter:#1da0f2;
+    --cl1:#353535;
+    --over5:rgba(226, 62, 56, 0.5);
+    --over6:rgba(0, 0, 0, 0.6);
+    --over8:rgba(0, 0, 0, 0.8);
+    --over9:rgba(0, 0, 0, 0.9);
+    --bg1:#ddd;
+    --bg2:#f1f1f1;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    vertical-align: middle;
+}
+/* ==========================
+        common css ends
+=============================*/
+
+/* ==========================
+        Fonts css start
+=============================*/
+.osw_reg{
+    font-family: var(--ff1);
+    font-weight: 400;
+}
+.osw_md{
+    font-family: var(--ff1);
+    font-weight: 500;
+}
+.osw_bold{
+    font-family: var(--ff1);
+    font-weight: 700;
+}
+.open_reg{
+    font-family: var(--ff2);
+    font-weight: 400;
+}
+.open_md{
+    font-family: var(--ff2);
+    font-weight: 500;
+}
+.open_bold{
+    font-family: var(--ff2);
+    font-weight: 700;
+}
+.fs_14{
+    font-size: 14px;
+}
+.fs_60{
+    font-size: 60px;
+}
+.fs_30{
+    font-size: 30px;
+}
+.fs_22{
+    font-size: 22px;
+}
+.fs_13{
+    font-size: 13px;
+}
+.fs_14{
+    font-size: 14px;
+}
+.fs_29{
+    font-size: 29px;
+}
+.fs_40{
+    font-size: 40px;
+}
+/* ==========================
+        Fonts css ends
+=============================*/
+/* navbar css starts */
+ .navbar{
+    background: rgba(53, 53, 53, 0.25);
+    position: fixed;
+    top: 30px;
+    left: 0;
+    z-index: 9999;
+}
+.navbar-light .navbar-brand{
+    padding: 10px 30px !important;
+    background: var(--cl1);
+
+}
+.navbar-light .navbar-brand{
+    transform: skewX(-35deg);
+    -webkit-transform: skewX(-35deg);
+    -moz-transform: skewX(-35deg);
+    -ms-transform: skewX(-35deg);
+    -o-transform: skewX(-35deg);
+    position: absolute;
+}
+.navbar-light .navbar-brand img{
+    transform: skewX(35deg);
+    -webkit-transform: skewX(35deg);
+    -moz-transform: skewX(35deg);
+    -ms-transform: skewX(35deg);
+    -o-transform: skewX(35deg);
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 0;
+    line-height: 50px;
+    position: relative;
+    color: #f8f8f8 !important;
+}
+.navbar-light .navbar-nav .nav-link::before{
+    content: '';
+    width: 100%;
+    height: 0;
+    background: white;
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.navbar-light .navbar-nav .nav-link:hover:before{
+    height: 100%;
+}
+.navbar-light .navbar-nav .nav-link::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background:var(--brandcl);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.navbar-light .navbar-nav .nav-link:hover::after{
+    width: 100%;
+}
+/* navbar css starts */
+/* banner starts */
+
+#banner .banner_slider .bg1{
+    background: url(../images/banner_bg1.jpg) no-repeat center / cover;
+}
+#banner .banner_slider .bg2{
+    background: url(../images/banner_bg2.jpg) no-repeat center / cover;
+}
+#banner .banner_slider .bg3{
+    background: url(../images/banner_bg3.jpg) no-repeat center / cover;
+}
+
+#banner .banner_slider .banner_item{
+    padding-top: 250px;
+    padding-bottom: 117px;
+    position: relative;
+    z-index: 1;
+
+}
+#banner .banner_slider .banner_item::after{
+   content: '';
+   width: 100%;
+   height: 100%;
+   background: var(--over6);
+   position: absolute;
+   inset: 0;
+   z-index: -1;
+
+}
+#banner .banner_slider .banner_item .banner_text h1{
+    color:var(--brandcl);
+}
+#banner .banner_slider .banner_item .container .row .banner_text p{
+    margin-bottom: 27px;
+}
+#banner .banner_slider .banner_item .banner_text .cta_btn{
+margin-right: 25px;
+}
+#banner .banner_slider .banner_item .banner_text .cta_btn:last-of-type{
+    margin-right: 0px;
+    }
+#banner .banner_slider .banner_item .container .row .banner_text .text_shape{
+    position: relative;
+}
+#banner .banner_slider .banner_item .container .row .banner_text .text_shape img {
+	position: absolute;
+	top: 19px;
+	left: -2px;
+	height: 88%;
+	width: 100%;
+}
+/* banner ends */

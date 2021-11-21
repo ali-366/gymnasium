@@ -84,12 +84,13 @@ img{
         Fonts css ends
 =============================*/
 /* navbar css starts */
- .navbar{
-    background: rgba(53, 53, 53, 0.25);
-    position: fixed;
+ #menuPart{
+     width: 100%;
+    position: absolute;
     top: 30px;
     left: 0;
     z-index: 9999;
+    background: rgba(53, 53, 53, 0.25);
 }
 .navbar-light .navbar-brand{
     padding: 10px 30px !important;
@@ -131,6 +132,9 @@ img{
     -ms-transition: all linear 0.4s;
     -o-transition: all linear 0.4s;
 }
+.navbar-light .navbar-nav .nav-item .nav-link:hover{
+    color: var(--cl1) !important;
+}
 .navbar-light .navbar-nav .nav-link:hover:before{
     height: 100%;
 }
@@ -151,6 +155,9 @@ img{
 }
 .navbar-light .navbar-nav .nav-link:hover::after{
     width: 100%;
+}
+.slick-active{
+    background: var(--brandcl);
 }
 /* navbar css starts */
 /* banner starts */
@@ -179,7 +186,7 @@ img{
    background: var(--over6);
    position: absolute;
    inset: 0;
-   z-index: -1;
+   z-index: -2;
 
 }
 #banner .banner_slider .banner_item .banner_text h1{
@@ -189,19 +196,135 @@ img{
     margin-bottom: 27px;
 }
 #banner .banner_slider .banner_item .banner_text .cta_btn{
-margin-right: 25px;
+     margin-right: 25px;
+     display: inline-block ;
+      transition:all linear 0.4s ;
+      -webkit-transition:all linear 0.4s ;
+       -moz-transition:all linear 0.4s ; 
+       -ms-transition:all linear 0.4s ;
+        -o-transition:all linear 0.4s ;
+        outline: none;
 }
+#banner .banner_slider .banner_item .banner_text .cta_btn:hover{
+   background: var(--brandcl);
+   border: 1px solid var(--brandcl);
+   color: #f1f1f1;
+    }
 #banner .banner_slider .banner_item .banner_text .cta_btn:last-of-type{
     margin-right: 0px;
     }
-#banner .banner_slider .banner_item .container .row .banner_text .text_shape{
+#banner .banner_slider .banner_item  .banner_text{
     position: relative;
 }
-#banner .banner_slider .banner_item .container .row .banner_text .text_shape img {
-	position: absolute;
+#banner .banner_slider .banner_item  .banner_text img {
+    position: absolute;
 	top: 19px;
 	left: -2px;
 	height: 88%;
 	width: 100%;
+    z-index: -1;
+}
+#banner .banner_slider .slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    z-index: 5;
+}
+#banner .banner_slider .slick-dots li .slick-active{
+    z-index: 2;
+    color: var(--brandcl);
+}
+#banner .banner_slider .slick-dots li button{
+    font-size: 0px;
+    outline: none;
+    width: 10px;
+    background: transparent;
+    height: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid var(--brandcl);
+    margin-left: 10px;
+  
+
+}
+#banner .banner_slider .slick-dots li:last-of-type{
+    margin-left: 0px;
+}
+#banner .banner_slider{
+    position: relative;
+}
+#banner .banner_slider .arrow_left {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid #696868;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999999;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    cursor: pointer;
+    color: #353535;
+    font-size: 30px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+#banner .banner_slider .arrow_right {
+	width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid #696868;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999999;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    cursor: pointer;
+    color: #353535;
+    font-size: 30px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+#banner .banner_slider .arrow_left:hover{
+    background: var(--brandcl);
+
+}
+#banner .banner_slider .arrow_right:hover{
+    background: var(--brandcl);
+    border:1px solid var(--brandcl) ;
+}
+#banner .banner_slider .arrow_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* banner ends */

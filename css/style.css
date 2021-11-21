@@ -226,37 +226,53 @@ img{
 }
 #banner .banner_slider .slick-dots{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 90%;
+    top: 94%;
     left: 50%;
+    width: 80px;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
-    z-index: 5;
+
 }
-#banner .banner_slider .slick-dots li .slick-active{
-    z-index: 2;
-    color: var(--brandcl);
-}
-#banner .banner_slider .slick-dots li button{
-    font-size: 0px;
-    outline: none;
+#banner .banner_slider .slick-dots li{
     width: 10px;
-    background: transparent;
     height: 10px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    border: 1px solid var(--brandcl);
-    margin-left: 10px;
-  
-
+    
+}
+#banner .banner_slider .slick-dots li .slick-active{
+   width: 10px;
+   height: 10px;
+   border: radius 50%; ;
+   color: var(--brandcl);
+   -webkit-border-radius:50% ;
+   -moz-border-radius:50% ;
+   -ms-border-radius:50% ;
+   -o-border-radius:50% ;
+}
+#banner .banner_slider .slick-dots li button {
+	font-size: 0px;
+	outline: none;
+	width: 10px;
+	background: transparent;
+	height: 10px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border: 1px solid var(--brandcl);
+	position: absolute;
+	top: 7%;
 }
 #banner .banner_slider .slick-dots li:last-of-type{
     margin-left: 0px;

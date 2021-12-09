@@ -11,11 +11,40 @@ $(document).ready(function(){
 
 
     // testimonial js
-    $('.testi_slider').slick({
+    $('.testimonial_slider').slick({
         autoplay:true,
         dots:true,
         slidesToShow:2,
         arrows: false,
+        responsive: [
+            {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                dots: false,
+            }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: false,
+                    arrows: false,
+                }
+            },
+                
+        ]
     });
     // counter up js
     $('.counter').counterUp({
@@ -29,6 +58,37 @@ $(document).ready(function(){
         arrows: true,
         prevArrow:'<i class="fas fa-arrow-left arrow_left"></i>',
         nextArrow:'<i class="fas fa-arrow-right arrow_right"></i>',
+        responsive: [
+                    {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 1,
+                        dots: false,
+                        arrows:false,
+                        
+                    }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            dots: false,
+                            arrows: false,
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            dots: false,
+                            arrows: false,
+                        }
+                    },
+                        
+                ]
     });
 
     // for shedule js
@@ -40,5 +100,6 @@ $(document).ready(function(){
     $('.shedule_menu ul li').on('click',function(){
         $(this).addClass('active_menu').siblings().removeClass('active_menu');
     });
+    
     
   });

@@ -538,11 +538,13 @@ img{
 /*  testimonial starts */
 #testimonial{
     margin-bottom: 80px;
+    
 }
-#testimonial .testimonial_bg{
+#testimonial .testimonial_bg {
     background: url(../images/testymolial_bg.jpg) no-repeat center / cover;
     position: relative;
     z-index: 1;
+    padding-bottom: 80px !important;
 }
 #testimonial .testimonial_bg::after{
     content: '';
@@ -554,17 +556,22 @@ img{
     z-index: -2;
   
 }
-#testimonial .testimonial_bg .testi_slider .slider_item p{
-    padding-right: 12px;
+#testimonial .testimonial_bg .testimonial_slider .testimonial_item{
+    margin-left: 30px;
 }
-#testimonial .testimonial_bg .testi_slider .slider_item .sliderText .star_box i{
+
+
+#testimonial .testimonial_bg .testimonial_slider .testimonial_item:last-of-type{
+    margin-right: 0px;
+}
+#testimonial .testimonial_bg .testimonial_slider .testimonial_item .texti_person_details .testi_icon i{
     color: var(--brandcl);
-    font-size: 25px;
+    font-size: 20px;
 }
-#testimonial .testimonial_bg .testi_slider .slick-dots .slick-active{
+#testimonial .testimonial_bg .testimonial_slider .slick-dots .slick-active{
     background: var(--brandcl);
 }
-#testimonial .testimonial_bg .testi_slider .slick-dots{
+#testimonial .testimonial_bg .testimonial_slider .slick-dots{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -577,10 +584,11 @@ img{
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
+    margin-top: 30px;
    
 
 }
-#testimonial .testimonial_bg .testi_slider .slick-dots li{
+#testimonial .testimonial_bg .testimonial_slider .slick-dots li{
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -588,9 +596,10 @@ img{
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+  
     
 }
-#testimonial .testimonial_bg .testi_slider .slick-dots li .slick-active{
+#testimonial .testimonial_bg .testimonial_slider .slick-dots li.slick-active{
   width: 10px;
   height: 10px;
   color: var(--brandcl);
@@ -599,8 +608,9 @@ img{
   -moz-border-radius: 50% ;
   -ms-border-radius: 50% ;
   -o-border-radius: 50% ;
+
 }
-#testimonial .testimonial_bg .testi_slider .slick-dots li button {
+#testimonial .testimonial_bg .testimonial_slider .slick-dots li button {
 	font-size:0px;
 	outline: none;
 	width: 10px;
@@ -612,14 +622,10 @@ img{
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
 	border: 1px solid var(--brandcl);
-	position: absolute;
-	top: 7%;
-    
+    display: flex;
 }
 
-#testimonial .testimonial_bg .testi_slider{
-    position: relative;
-}
+
 /*  testimonial ends */
 /*  membership start */
 #membership{
@@ -709,6 +715,8 @@ z-index: -2;
     position: relative;
     z-index: -2;
     margin-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
 }
 #countUp .countUp::after{
@@ -724,149 +732,69 @@ z-index: -2;
 /*  counterUp end  */
 /*  shedulestarts  */
 #shedule{
+    margin-top: 80px;
     margin-bottom: 80px;
 }
-#shedule .shedule_menu ul li{
-    line-height: 50px;
-    background: var(--bg1);
-    width: 20%;
-    text-align: center;
-}
-#shedule .shedule_menu ul li{
-    width: 100%;
-    line-height: 50px;
-    color: #353535;
-    text-decoration: none;
+#shedule .nav-tabs .nav-link{
+    border: transparent !important;
+    color: var(--cl1);
     transition: all linear 0.4s;
-    -webkit-transition: all linear 0.4s;
-    -moz-transition: all linear 0.4s;
-    -ms-transition: all linear 0.4s;
-    -o-transition: all linear 0.4s;
-    display: inline-block;
-    cursor: pointer;
+    -webkit-transition: all linear 0.4;
+    -moz-transition: all linear 0.4;
+    -ms-transition: all linear 0.4;
+    -o-transition: all linear 0.4;
+}
+#shedule .nav-tabs .nav-item{
+    width: 16.66%;
+    line-height: 50px;  
+}
+#shedule .header_sec img{
+    margin-bottom: 30px;
+}
+#shedule .nav{
+    background: var(--bg1);
+}
+#shedule .nav-tabs .nav-link.active{
+    background: var(--brandcl);
+    color: #fff;
+}
+#shedule .main_shedule ul li.active{
+    background: var(--brandcl);
+    color: #fff;
 }
 
-#shedule  .container .shedule_menu ul li.active_menu{
-  
-    background: var(--brandcl)!important; 
-    color: #fff;
-  
-}
-#shedule .shedule_menu ul li:hover{
-    background: var(--brandcl);
-    color: white;
-}
-#shedule .shedule_contents .shedule_item{
-    width: 19.5%;
+#shedule .shedule_nav .nav-tabs .nav-link{
     background: var(--bg1);
-    transition: all linear 0.4s;
-    -webkit-transition: all linear 0.4s;
-    -moz-transition: all linear 0.4s;
-    -ms-transition: all linear 0.4s;
-    -o-transition: all linear 0.4s;
-    box-sizing: border-box;
-    margin-bottom: 5px;
+    line-height: 50px;
 }
-#shedule .shedule_contents .shedule_item:hover{
-    background: var(--brandcl);
-    color: #f1f1f1;
+#shedule  .nav-tabs .nav-link:hover{
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
 }
-#shedule  .tuesday .shedule_contents .shedule_item{
-    width: 19.5%;
-    background: #ffeb3a;
-    transition: all linear 0.4s;
-    -webkit-transition: all linear 0.4s;
-    -moz-transition: all linear 0.4s;
-    -ms-transition: all linear 0.4s;
-    -o-transition: all linear 0.4s;
-    box-sizing: border-box;
-    margin-bottom: 5px;
+#shedule .main_shedule ul{
+    margin-top: 30px;
 }
-#shedule .tuesday .shedule_contents .shedule_item:hover{
-    background: var(--brandcl);
-    color: #f1f1f1;
-}
-#shedule .suturday .shedule_contents .shedule_item{
-    width: 19.5%;
-    background: #c9f872;
-    transition: all linear 0.4s;
-    -webkit-transition: all linear 0.4s;
-    -moz-transition: all linear 0.4s;
-    -ms-transition: all linear 0.4s;
-    -o-transition: all linear 0.4s;
-    box-sizing: border-box;
-    margin-bottom: 5px;
-}
-#shedule .suturday .shedule_contents .shedule_item:hover{
-    background: var(--brandcl);
-    color: #f1f1f1;
-}
-#shedule .wednesday .shedule_contents .shedule_item{
-    width: 19.5%;
-    background: #85f5e2;
-    transition: all linear 0.4s;
-    -webkit-transition: all linear 0.4s;
-    -moz-transition: all linear 0.4s;
-    -ms-transition: all linear 0.4s;
-    -o-transition: all linear 0.4s;
-    box-sizing: border-box;
-    margin-bottom: 5px;
-}
-#shedule .wednesday .shedule_contents .shedule_item:hover{
-    background: var(--brandcl);
-    color: #f1f1f1;
-}
-#shedule .thursday .shedule_contents .shedule_item{
-    width: 19.5%;
-    background: #f77c78;
-    transition: all linear 0.4s;
-    -webkit-transition: all linear 0.4s;
-    -moz-transition: all linear 0.4s;
-    -ms-transition: all linear 0.4s;
-    -o-transition: all linear 0.4s;
-    box-sizing: border-box;
-    margin-bottom: 5px;
-}
-#shedule .thursday .shedule_contents .shedule_item:hover{
-    background: var(--brandcl);
-    color: #f1f1f1;
-}
-#shedule .friday .shedule_contents .shedule_item{
-    width: 19.5%;
-    background: #8c8af7;
-    transition: all linear 0.4s;
-    -webkit-transition: all linear 0.4s;
-    -moz-transition: all linear 0.4s;
-    -ms-transition: all linear 0.4s;
-    -o-transition: all linear 0.4s;
-    box-sizing: border-box;
-    margin-bottom: 5px;
-    color: #f1f1f1;
-}
-#shedule .friday .shedule_contents .shedule_item:hover{
-    background: var(--brandcl);
-    color: #f1f1f1;
-}
-#shedule .suturday .shedule_contents .shedule_item{
-    width: 19.5%;
-    background: #96cef1;
-    transition: all linear 0.4s;
-    -webkit-transition: all linear 0.4s;
-    -moz-transition: all linear 0.4s;
-    -ms-transition: all linear 0.4s;
-    -o-transition: all linear 0.4s;
-    box-sizing: border-box;
-    margin-bottom: 5px;
-    color: #f1f1f1;
-}
-#shedule .suturday .shedule_contents .shedule_item:hover{
-    background: var(--brandcl);
-    color: #f1f1f1;
+#shedule .main_shedule ul li{
+    width: 20%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: var(--bg1);
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
 }
 /*  shedule end  */
 /* partner ctarts */
 #partner{
     margin-bottom: 80px;
+}
+#partner .partner_item img{
+    width: 100%;
 }
 #partner .partner_item .arrow_left {
 	width: 45px;
@@ -949,12 +877,13 @@ z-index: -2;
     z-index: -1;
 
 }
-#footer .footer_logo hr{
- color: #fff;
-}
 #footer hr{
     color: #fff;
-   }
+}
+#footer .days,.time{
+    margin-top: -44px;
+}
+
 #footer .twitt_sec .twi_icon{
     width: 5%;
 }
@@ -966,6 +895,9 @@ z-index: -2;
 }
 #footer .twitt_sec .twi_text{
     width: 95%;
+}
+#footer .twitt .twitt_sec .time_sec ul{
+    margin-left: 40px;
 }
 #footer .flickrPhotos .image{
     width: 23%;
@@ -1020,6 +952,9 @@ z-index: -2;
     cursor: pointer;
 }
 #footer .container .contac_info .social_link .social_icon i{
+    margin-left: 10px;
+}
+#footer .container .contac_info .social_link .social_icon i{
     color: #fff;
     width: 40px;
     height: 40px;
@@ -1039,3 +974,6 @@ z-index: -2;
     border: 1px solid var(--brandcl);
 }
 /* footer sec ends */
+/* routen sec ends */
+
+/* routen sec ends */

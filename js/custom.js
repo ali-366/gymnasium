@@ -60,7 +60,7 @@ $(document).ready(function(){
         nextArrow:'<i class="fas fa-arrow-right arrow_right"></i>',
         responsive: [
                     {
-                    breakpoint: 992,
+                    breakpoint:1201,
                     settings: {
                         slidesToShow: 5,
                         slidesToScroll: 1,
@@ -70,7 +70,7 @@ $(document).ready(function(){
                     }
                     },
                     {
-                        breakpoint: 768,
+                        breakpoint: 992,
                         settings: {
                             slidesToShow: 3,
                             slidesToScroll: 1,

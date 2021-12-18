@@ -91,14 +91,16 @@ img{
 =============================*/
 /* navbar css starts */
  #menuPart{
-     width: 100%;
-    position: absolute;
-    top: 30px;
-    left: 0;
+    width: 100%;
+    position: fixed;
     z-index: 9999;
     background: rgba(53, 53, 53, 0.25);
+    top: 30px;
+    left: 0;
 }
-.navbar-light .navbar-brand{
+
+    
+#menuPart .navbar-brand{
     padding: 10px 30px !important;
     background: var(--cl1);
 
@@ -109,7 +111,6 @@ img{
     -moz-transform: skewX(-35deg);
     -ms-transform: skewX(-35deg);
     -o-transform: skewX(-35deg);
-    position: absolute;
 }
 .navbar-light .navbar-brand img{
     transform: skewX(35deg);
@@ -896,9 +897,12 @@ z-index: -2;
 #footer .twitt_sec .twi_text{
     width: 95%;
 }
-#footer .twitt .twitt_sec .time_sec ul{
-    margin-left: 40px;
+#footer .twitt .twitt_sec .Hours ul li{
+ width: 100%;
 }
+#footer .twitt .twitt_sec .Hours ul li span{
+ margin-right: 30px;
+   }
 #footer .flickrPhotos .image{
     width: 23%;
     position: relative;

@@ -1,5 +1,36 @@
 $(document).ready(function(){
     
+    $('.color_picker .color_btn').on('click',function(){
+        $('.color_picker').toggleClass('color_pos');
+    });
+
+    $('.color_picker .Orange').on('click',function(){
+        $('body').addClass('Orange').removeClass('Green').removeClass('Yellow').removeClass('red').removeClass('blue');
+    });
+
+    $('.color_picker .blue').on('click',function(){
+        $('body').addClass('blue').removeClass('Green').removeClass('Yellow').removeClass('red').removeClass('Orange');
+    });
+
+    $('.color_picker .red').on('click',function(){
+        $('body').addClass('red').removeClass('Green').removeClass('Yellow').removeClass('blue').removeClass('Orange');
+    });
+
+    $('.color_picker .Yellow').on('click',function(){
+        $('body').addClass('Yellow').removeClass('Green').removeClass('red').removeClass('blue').removeClass('Orange');
+    });
+    $('.color_picker .Green').on('click',function(){
+        $('body').addClass('Green').removeClass('Yellow').removeClass('red').removeClass('blue').removeClass('Orange');
+    });
+
+    $('.color_picker .default').on('click',function(){
+        $('body').removeClass('Green').removeClass('Yellow').removeClass('red').removeClass('blue').removeClass('Orange');
+    });
+
+
+
+
+
     $('.banner_slider').slick({
         autoplay:true,
         dots:true,

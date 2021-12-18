@@ -197,6 +197,60 @@ img{
 #banner .banner_slider .banner_item .banner_text h1{
     color:var(--brandcl);
 }
+#banner .banner_slider .bg1 .banner_text h1::before {
+	content: '';
+	width: 30%;
+	height: 3px;
+	background: var(--brandcl);
+	position: absolute;
+	top: 19px;
+	left: 0;
+}
+#banner .banner_slider .bg1 .banner_text h1::after {
+	content: '';
+	width: 22%;
+	height: 3px;
+	background: var(--brandcl);
+	position: absolute;
+	top: 19px;
+	right: 2px;
+}
+#banner .banner_slider .bg1 .banner_text h4::before {
+	content: '';
+	width: 3px;
+	height: 87%;
+	background: var(--brandcl);
+	position: absolute;
+	top: 19px;
+	left: -2px;
+}
+#banner .banner_slider .bg1 .banner_text h4::after {
+	content: '';
+	width: 3px;
+	height: 87%;
+	background: var(--brandcl);
+	position: absolute;
+	top: 19px;
+	right: 2px;
+}
+#banner .banner_slider .bg1 .banner_text p::before {
+	content: '';
+	width: 11%;
+	height: 3px;
+	background: var(--brandcl);
+	position: absolute;
+	top: 94%;
+	left: -2px;
+}
+#banner .banner_slider .bg1 .banner_text p::after {
+	content: '';
+	width: 6%;
+	height: 3px;
+	background: var(--brandcl);
+	position: absolute;
+	top: 94%;
+	right: 2px;
+}
 #banner .banner_slider .banner_item .container .row .banner_text p{
     margin-bottom: 27px;
 }
@@ -981,3 +1035,340 @@ z-index: -2;
 /* routen sec ends */
 
 /* routen sec ends */
+
+/* color Picker sec starts */
+.color_picker{
+    width: 200px;
+    height: 50px;
+    background: rosybrown;
+    position: fixed;
+    top: 300px;
+    right: -200px;
+    z-index: 99999999;
+    cursor: pointer;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.color_picker .color_btn{
+    width: 30px;
+    height: 30px;
+    background: #fc6b6b;
+    position: absolute;
+    left: -30px;
+    top: 10px;
+}
+.color_picker .color_btn i{
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+}
+.color_picker ul li{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-left: 3px;
+}
+.color_picker ul li.default{
+    background: var(--brandcl);
+}
+.color_picker ul li.Orange{
+background: Orange;
+}
+.color_picker ul li.blue{
+ background: blue;
+}
+.color_picker ul li.Green{
+    background: Green;
+}
+.color_picker ul li.red{
+    background: red;
+}
+.color_picker ul li.Yellow{
+    background: yellow;
+}
+.color_pos{
+    right: 0;
+}
+/* color Picker sec ends */
+
+
+/* color Picker option sec start */
+/* orange  color css start*/
+.Orange .navbar-light .navbar-nav .nav-link:hover::after,
+
+.Orange #membership .membership .plan_item:hover .plan_header h4,
+.Orange #membership .membership .plan_item:hover .btn,
+.Orange #shedule .nav-tabs .nav-link.active,
+.Orange #shedule .main_shedule ul li.active,
+.Orange #partner .partner_item .arrow_left:hover,
+.Orange #partner .partner_item .arrow_right:hover,
+.Orange #banner .banner_slider .bg1 .banner_text h1::before,
+.Orange #banner .banner_slider .bg1 .banner_text h1::after,
+.Orange #banner .banner_slider .bg1 .banner_text h4::before,
+.Orange #banner .banner_slider .bg1 .banner_text h4::after,
+.Orange #banner .banner_slider .bg1 .banner_text p::after,
+.Orange #banner .banner_slider .bg1 .banner_text p::before,
+.Orange .color_picker .color_btn,
+.Orange #banner .banner_slider .banner_item .banner_text .cta_btn:hover,
+.Orange #about .ab_vdo .vdo_overlay i{
+    background: orange;
+}
+.Orange #testimonial .testimonial_bg .testimonial_slider .slick-dots li button,
+.Orange #banner .banner_slider .slick-dots li button {
+	
+	border: 1px solid orange;
+  
+}
+
+
+.Orange #banner .banner_slider .banner_item .banner_text .cta_btn:hover,
+.Orange #testimonial .testimonial_bg .testimonial_slider .slick-dots li.slick-active,
+.Orange #banner .banner_slider .slick-dots .slick-active
+{
+    background: orange;
+    border:orange;
+}
+
+
+.Orange #gallery .gallery_bg .gl_item .item_overlay,
+
+.Orange #team .team .card .card_overlay{
+    background: rgba(255, 166, 0, 0.521);
+}
+.Orange #banner .banner_slider .banner_item .banner_text h1,
+.Orange #footer .container .contac_info .addres .adrs-icon i,
+.Orange #footer .container .contac_info .mobile .mobile-icon i,
+.Orange #footer .container .contac_info .email .email-icon i,
+.Orange #testimonial .testimonial_bg .testimonial_slider .testimonial_item .texti_person_details .testi_icon i,
+.Orange #footer a,
+.Orange #banner .banner_slider .slick-dots .slick-active
+ {
+    color: orange;
+}
+/* orange  color css ends*/
+
+
+/* blue  color css start*/
+
+.blue .navbar-light .navbar-nav .nav-link:hover::after,
+.blue #membership .membership .plan_item:hover .plan_header h4,
+.blue #membership .membership .plan_item:hover .btn,
+.blue #shedule .nav-tabs .nav-link.active,
+.blue #shedule .main_shedule ul li.active,
+.blue #partner .partner_item .arrow_left:hover,
+.blue #partner .partner_item .arrow_right:hover,
+.blue #banner .banner_slider .bg1 .banner_text h1::before,
+.blue #banner .banner_slider .bg1 .banner_text h1::after,
+.blue #banner .banner_slider .bg1 .banner_text h4::before,
+.blue #banner .banner_slider .bg1 .banner_text h4::after,
+.blue #banner .banner_slider .bg1 .banner_text p::after,
+.blue #banner .banner_slider .bg1 .banner_text p::before,
+.blue .color_picker .color_btn,
+.blue #banner .banner_slider .banner_item .banner_text .cta_btn:hover,
+.blue #about .ab_vdo .vdo_overlay i{
+    background: blue;
+}
+.blue #testimonial .testimonial_bg .testimonial_slider .slick-dots li button,
+.blue #banner .banner_slider .slick-dots li button  {
+	
+	border: 1px solid blue;
+  
+}
+
+
+.blue #banner .banner_slider .banner_item .banner_text .cta_btn:hover,
+.blue #testimonial .testimonial_bg .testimonial_slider .slick-dots li.slick-active,
+.blue #banner .banner_slider .slick-dots .slick-active
+{
+    background: blue;
+    border:blue;
+}
+
+
+.blue #gallery .gallery_bg .gl_item .item_overlay,
+
+.blue #team .team .card .card_overlay{
+    background: rgba(0, 0, 255, 0.5);
+}
+.blue #banner .banner_slider .banner_item .banner_text h1,
+.blue #footer .container .contac_info .addres .adrs-icon i,
+.blue #footer .container .contac_info .mobile .mobile-icon i,
+.blue #footer .container .contac_info .email .email-icon i,
+.blue #testimonial .testimonial_bg .testimonial_slider .testimonial_item .texti_person_details .testi_icon i,
+.blue #footer a,
+.blue #banner .banner_slider .slick-dots .slick-active
+ {
+    color: blue;
+}
+/* blue  color css ends*/
+
+/* red  color css start*/
+
+.red .navbar-light .navbar-nav .nav-link:hover::after,
+.red #membership .membership .plan_item:hover .plan_header h4,
+.red #membership .membership .plan_item:hover .btn,
+.red #shedule .nav-tabs .nav-link.active,
+.red #shedule .main_shedule ul li.active,
+.red #partner .partner_item .arrow_left:hover,
+.red #partner .partner_item .arrow_right:hover,
+.red #banner .banner_slider .bg1 .banner_text h1::before,
+.red #banner .banner_slider .bg1 .banner_text h1::after,
+.red #banner .banner_slider .bg1 .banner_text h4::before,
+.red #banner .banner_slider .bg1 .banner_text h4::after,
+.red #banner .banner_slider .bg1 .banner_text p::after,
+.red #banner .banner_slider .bg1 .banner_text p::before,
+.red .color_picker .color_btn,
+.red #banner .banner_slider .banner_item .banner_text .cta_btn:hover,
+.red #about .ab_vdo .vdo_overlay i{
+    background: red;
+}
+.red #testimonial .testimonial_bg .testimonial_slider .slick-dots li button,
+.red #banner .banner_slider .slick-dots li button  {
+	
+	border: 1px solid red;
+  
+}
+
+
+.red #banner .banner_slider .banner_item .banner_text .cta_btn:hover,
+.red #testimonial .testimonial_bg .testimonial_slider .slick-dots li.slick-active,
+.red #banner .banner_slider .slick-dots .slick-active
+{
+    background: red;
+    border:red;
+}
+
+
+.red #gallery .gallery_bg .gl_item .item_overlay,
+
+.red #team .team .card .card_overlay{
+    background: rgba(255, 0, 0, 0.5);
+}
+.red #banner .banner_slider .banner_item .banner_text h1,
+.red #footer .container .contac_info .addres .adrs-icon i,
+.red #footer .container .contac_info .mobile .mobile-icon i,
+.red #footer .container .contac_info .email .email-icon i,
+.red #testimonial .testimonial_bg .testimonial_slider .testimonial_item .texti_person_details .testi_icon i,
+.red #footer a,
+.blurede #banner .banner_slider .slick-dots .slick-active
+ {
+    color: red;
+}
+/* red  color css ends*/
+
+/* yellow  color css start*/
+
+.Yellow .navbar-light .navbar-nav .nav-link:hover::after,
+.Yellow #membership .membership .plan_item:hover .plan_header h4,
+.Yellow #membership .membership .plan_item:hover .btn,
+.Yellow #shedule .nav-tabs .nav-link.active,
+.Yellow #shedule .main_shedule ul li.active,
+.Yellow #partner .partner_item .arrow_left:hover,
+.Yellow #partner .partner_item .arrow_right:hover,
+.Yellow #banner .banner_slider .bg1 .banner_text h1::before,
+.Yellow #banner .banner_slider .bg1 .banner_text h1::after,
+.Yellow #banner .banner_slider .bg1 .banner_text h4::before,
+.Yellow #banner .banner_slider .bg1 .banner_text h4::after,
+.Yellow #banner .banner_slider .bg1 .banner_text p::after,
+.Yellow #banner .banner_slider .bg1 .banner_text p::before,
+.Yellow .color_picker .color_btn,
+.Yellow #banner .banner_slider .banner_item .banner_text .cta_btn:hover,
+.Yellow #about .ab_vdo .vdo_overlay i{
+    background: yellow;
+}
+.Yellow #testimonial .testimonial_bg .testimonial_slider .slick-dots li button,
+.Yellow #banner .banner_slider .slick-dots li button  {
+	
+	border: 1px solid yellow;
+  
+}
+
+
+.Yellow #banner .banner_slider .banner_item .banner_text .cta_btn:hover,
+.Yellow #testimonial .testimonial_bg .testimonial_slider .slick-dots li.slick-active,
+.Yellow #banner .banner_slider .slick-dots .slick-active,
+.Yellow #footer .container .contac_info .social_link .social_icon i:hover
+{
+    background: yellow;
+    border:yellow;
+}
+
+
+.Yellow #gallery .gallery_bg .gl_item .item_overlay,
+.Yellow #team .team .card .card_overlay{
+    background: rgba(255, 255, 0, 0.5);
+}
+.Yellow #banner .banner_slider .banner_item .banner_text h1,
+.Yellow #footer .container .contac_info .addres .adrs-icon i,
+.Yellow #footer .container .contac_info .mobile .mobile-icon i,
+.Yellow #footer .container .contac_info .email .email-icon i,
+.Yellow #testimonial .testimonial_bg .testimonial_slider .testimonial_item .texti_person_details .testi_icon i,
+.Yellow #footer a,
+.Yellow #banner .banner_slider .slick-dots .slick-active
+ {
+    color: yellow;
+}
+/* yellow  color css ends*/
+
+/* green  color css start*/
+
+.Green .navbar-light .navbar-nav .nav-link:hover::after,
+.Green #membership .membership .plan_item:hover .plan_header h4,
+.Green #membership .membership .plan_item:hover .btn,
+.Green #shedule .nav-tabs .nav-link.active,
+.Green #shedule .main_shedule ul li.active,
+.Green #partner .partner_item .arrow_left:hover,
+.Green #partner .partner_item .arrow_right:hover,
+.Green #banner .banner_slider .bg1 .banner_text h1::before,
+.Green #banner .banner_slider .bg1 .banner_text h1::after,
+.Green #banner .banner_slider .bg1 .banner_text h4::before,
+.Green #banner .banner_slider .bg1 .banner_text h4::after,
+.Green #banner .banner_slider .bg1 .banner_text p::after,
+.Green #banner .banner_slider .bg1 .banner_text p::before,
+.Green .color_picker .color_btn,
+.Green #banner .banner_slider .banner_item .banner_text .cta_btn:hover,
+.Green #about .ab_vdo .vdo_overlay i{
+    background: green;
+}
+.Green #testimonial .testimonial_bg .testimonial_slider .slick-dots li button,
+.Green #banner .banner_slider .slick-dots li button{
+	
+	border: 1px solid green;
+  
+}green
+
+
+.Green #banner .banner_slider .banner_item .banner_text .cta_btn:hover,
+.Green #testimonial .testimonial_bg .testimonial_slider .slick-dots li.slick-active,
+.Green #banner .banner_slider .slick-dots .slick-active,
+.Green #footer .container .contac_info .social_link .social_icon i:hover
+{
+    background: green;
+    border:green;
+}
+
+
+.Green #gallery .gallery_bg .gl_item .item_overlay,
+.Green #team .team .card .card_overlay{
+    background: rgba(0, 128, 0, 0.5)
+}
+.Green #banner .banner_slider .banner_item .banner_text h1,
+.Green #footer .container .contac_info .addres .adrs-icon i,
+.Green #footer .container .contac_info .mobile .mobile-icon i,
+.Green #footer .container .contac_info .email .email-icon i,
+.Green #testimonial .testimonial_bg .testimonial_slider .testimonial_item .texti_person_details .testi_icon i,
+.Green #footer a,
+.Green #banner .banner_slider .slick-dots .slick-active
+ {
+    color: green;
+}
+/* green  color css ends*/
+
+/* color Picker option sec ends */

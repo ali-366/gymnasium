@@ -90,18 +90,35 @@ img{
         Fonts css ends
 =============================*/
 /* navbar css starts */
- #menuPart{
-    width: 100%;
-    position: fixed;
-    z-index: 9999;
-    background: rgba(53, 53, 53, 0.25);
+nav {
+	width: 100%;
+	z-index: 9999;
+	background: rgba(53, 53, 53, 0.25);
     top: 30px;
-    left: 0;
-}
+ 
 
+}
+.nav-fix{
+    width: 100%;
+    position: fixed !important;
+    z-index: 99999;
+    background: rgba(70, 69, 69, 0.25);
+    top: 0;
+    left: 0;
+    animation: slow 1s linear infinite;
+    -webkit-animation: slow 1s linear;
+}
+@keyframes slow {
+    0%{
+        top:-50px;
+    }
+    100%{
+        top:0px;
+    }     
+}
     
-#menuPart .navbar-brand{
-    padding: 10px 30px !important;
+.navbar-brand{
+    padding: 20px 30px !important;
     background: var(--cl1);
 
 }
@@ -850,6 +867,7 @@ z-index: -2;
 }
 #partner .partner_item img{
     width: 100%;
+    padding: 5px;
 }
 #partner .partner_item .arrow_left {
 	width: 45px;
@@ -1116,6 +1134,7 @@ background: Orange;
 .Orange #banner .banner_slider .bg1 .banner_text p::after,
 .Orange #banner .banner_slider .bg1 .banner_text p::before,
 .Orange .color_picker .color_btn,
+.Orange .back-to-top,
 .Orange #banner .banner_slider .banner_item .banner_text .cta_btn:hover,
 .Orange #about .ab_vdo .vdo_overlay i{
     background: orange;
@@ -1130,7 +1149,8 @@ background: Orange;
 
 .Orange #banner .banner_slider .banner_item .banner_text .cta_btn:hover,
 .Orange #testimonial .testimonial_bg .testimonial_slider .slick-dots li.slick-active,
-.Orange #banner .banner_slider .slick-dots .slick-active
+.Orange #banner .banner_slider .slick-dots .slick-active,
+.Orange #footer .container .contac_info .social_link .social_icon i:hover
 {
     background: orange;
     border:orange;
@@ -1171,6 +1191,7 @@ background: Orange;
 .blue #banner .banner_slider .bg1 .banner_text p::after,
 .blue #banner .banner_slider .bg1 .banner_text p::before,
 .blue .color_picker .color_btn,
+.blue .back-to-top,
 .blue #banner .banner_slider .banner_item .banner_text .cta_btn:hover,
 .blue #about .ab_vdo .vdo_overlay i{
     background: blue;
@@ -1185,7 +1206,8 @@ background: Orange;
 
 .blue #banner .banner_slider .banner_item .banner_text .cta_btn:hover,
 .blue #testimonial .testimonial_bg .testimonial_slider .slick-dots li.slick-active,
-.blue #banner .banner_slider .slick-dots .slick-active
+.blue #banner .banner_slider .slick-dots .slick-active,
+.blue #footer .container .contac_info .social_link .social_icon i:hover
 {
     background: blue;
     border:blue;
@@ -1225,6 +1247,7 @@ background: Orange;
 .red #banner .banner_slider .bg1 .banner_text p::after,
 .red #banner .banner_slider .bg1 .banner_text p::before,
 .red .color_picker .color_btn,
+.red .back-to-top,
 .red #banner .banner_slider .banner_item .banner_text .cta_btn:hover,
 .red #about .ab_vdo .vdo_overlay i{
     background: red;
@@ -1239,7 +1262,8 @@ background: Orange;
 
 .red #banner .banner_slider .banner_item .banner_text .cta_btn:hover,
 .red #testimonial .testimonial_bg .testimonial_slider .slick-dots li.slick-active,
-.red #banner .banner_slider .slick-dots .slick-active
+.red #banner .banner_slider .slick-dots .slick-active,
+.red #footer .container .contac_info .social_link .social_icon i:hover
 {
     background: red;
     border:red;
@@ -1279,6 +1303,7 @@ background: Orange;
 .Yellow #banner .banner_slider .bg1 .banner_text p::after,
 .Yellow #banner .banner_slider .bg1 .banner_text p::before,
 .Yellow .color_picker .color_btn,
+.Yellow .back-to-top,
 .Yellow #banner .banner_slider .banner_item .banner_text .cta_btn:hover,
 .Yellow #about .ab_vdo .vdo_overlay i{
     background: yellow;
@@ -1294,6 +1319,7 @@ background: Orange;
 .Yellow #banner .banner_slider .banner_item .banner_text .cta_btn:hover,
 .Yellow #testimonial .testimonial_bg .testimonial_slider .slick-dots li.slick-active,
 .Yellow #banner .banner_slider .slick-dots .slick-active,
+.Yellow #footer .container .contac_info .social_link .social_icon i:hover,
 .Yellow #footer .container .contac_info .social_link .social_icon i:hover
 {
     background: yellow;
@@ -1333,11 +1359,13 @@ background: Orange;
 .Green #banner .banner_slider .bg1 .banner_text p::after,
 .Green #banner .banner_slider .bg1 .banner_text p::before,
 .Green .color_picker .color_btn,
+.Green .back-to-top,
 .Green #banner .banner_slider .banner_item .banner_text .cta_btn:hover,
 .Green #about .ab_vdo .vdo_overlay i{
     background: green;
 }
 .Green #testimonial .testimonial_bg .testimonial_slider .slick-dots li button,
+.Green #banner .banner_slider .banner_item .banner_text .cta_btn:hover,
 .Green #banner .banner_slider .slick-dots li button{
 	
 	border: 1px solid green;
@@ -1348,6 +1376,7 @@ background: Orange;
 .Green #banner .banner_slider .banner_item .banner_text .cta_btn:hover,
 .Green #testimonial .testimonial_bg .testimonial_slider .slick-dots li.slick-active,
 .Green #banner .banner_slider .slick-dots .slick-active,
+.Green #footer .container .contac_info .social_link .social_icon i:hover,
 .Green #footer .container .contac_info .social_link .social_icon i:hover
 {
     background: green;
@@ -1372,3 +1401,20 @@ background: Orange;
 /* green  color css ends*/
 
 /* color Picker option sec ends */
+
+/* back-to-top css starts */
+.back-to-top{
+    width: 40px;
+    height: 40px;
+    display:none;
+    background: #e23e38;
+    position: fixed;
+    bottom: 30px;
+    line-height: 40px;
+    text-align: center;
+    left: 30px;
+    cursor: pointer;
+    z-index: 9999999;
+   
+}
+/* back-to-top css ends */

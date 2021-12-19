@@ -29,7 +29,32 @@ $(document).ready(function(){
 
 
 
+    // scroll fucntion
+    $(window).scroll(function(){
+        var scrolling = $(this).scrollTop();
+        if(scrolling >400){
+            $('.back-to-top').fadeIn();
+        }else{
+            $('.back-to-top').fadeOut();
+        }
 
+
+        if(scrolling > 300){
+            $('nav').addClass('nav-fix');
+        }else{
+            $('nav').removeClass('nav-fix');
+        }
+    });
+
+    // bac to top js
+    $('.back-to-top').on('click',function(){
+        $('html,body').animate({
+            scrollTop:'0px', 
+        },1500);
+    });
+
+
+    
 
     $('.banner_slider').slick({
         autoplay:true,
